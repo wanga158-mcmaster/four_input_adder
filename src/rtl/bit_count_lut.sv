@@ -1,0 +1,544 @@
+module check_0 (
+    input logic [5:0] d_in,
+    output logic d_out
+);
+
+    always_comb begin
+        case (d_in)  // check sum = 0
+            6'b000000: d_out = 1;
+            6'b000001: d_out = 0;
+            6'b000010: d_out = 0;
+            6'b000011: d_out = 0;
+            6'b000100: d_out = 0;
+            6'b000101: d_out = 0;
+            6'b000110: d_out = 0;
+            6'b000111: d_out = 0;
+            6'b001000: d_out = 0;
+            6'b001001: d_out = 0;
+            6'b001010: d_out = 0;
+            6'b001011: d_out = 0;
+            6'b001100: d_out = 0;
+            6'b001101: d_out = 0;
+            6'b001110: d_out = 0;
+            6'b001111: d_out = 0;
+            6'b010000: d_out = 0;
+            6'b010001: d_out = 0;
+            6'b010010: d_out = 0;
+            6'b010011: d_out = 0;
+            6'b010100: d_out = 0;
+            6'b010101: d_out = 0;
+            6'b010110: d_out = 0;
+            6'b010111: d_out = 0;
+            6'b011000: d_out = 0;
+            6'b011001: d_out = 0;
+            6'b011010: d_out = 0;
+            6'b011011: d_out = 0;
+            6'b011100: d_out = 0;
+            6'b011101: d_out = 0;
+            6'b011110: d_out = 0;
+            6'b011111: d_out = 0;
+            6'b100000: d_out = 0;
+            6'b100001: d_out = 0;
+            6'b100010: d_out = 0;
+            6'b100011: d_out = 0;
+            6'b100100: d_out = 0;
+            6'b100101: d_out = 0;
+            6'b100110: d_out = 0;
+            6'b100111: d_out = 0;
+            6'b101000: d_out = 0;
+            6'b101001: d_out = 0;
+            6'b101010: d_out = 0;
+            6'b101011: d_out = 0;
+            6'b101100: d_out = 0;
+            6'b101101: d_out = 0;
+            6'b101110: d_out = 0;
+            6'b101111: d_out = 0;
+            6'b110000: d_out = 0;
+            6'b110001: d_out = 0;
+            6'b110010: d_out = 0;
+            6'b110011: d_out = 0;
+            6'b110100: d_out = 0;
+            6'b110101: d_out = 0;
+            6'b110110: d_out = 0;
+            6'b110111: d_out = 0;
+            6'b111000: d_out = 0;
+            6'b111001: d_out = 0;
+            6'b111010: d_out = 0;
+            6'b111011: d_out = 0;
+            6'b111100: d_out = 0;
+            6'b111101: d_out = 0;
+            6'b111110: d_out = 0;
+            6'b111111: d_out = 0;
+            default:   d_out = 0;
+        endcase
+    end
+endmodule
+;
+
+
+module check_1 (
+    input logic [5:0] d_in,
+    output logic d_out
+);
+
+    always_comb begin
+        case (d_in)  // check sum = 1
+            6'b000000: d_out = 0;
+            6'b000001: d_out = 1;
+            6'b000010: d_out = 1;
+            6'b000011: d_out = 0;
+            6'b000100: d_out = 1;
+            6'b000101: d_out = 0;
+            6'b000110: d_out = 0;
+            6'b000111: d_out = 0;
+            6'b001000: d_out = 1;
+            6'b001001: d_out = 0;
+            6'b001010: d_out = 0;
+            6'b001011: d_out = 0;
+            6'b001100: d_out = 0;
+            6'b001101: d_out = 0;
+            6'b001110: d_out = 0;
+            6'b001111: d_out = 0;
+            6'b010000: d_out = 1;
+            6'b010001: d_out = 0;
+            6'b010010: d_out = 0;
+            6'b010011: d_out = 0;
+            6'b010100: d_out = 0;
+            6'b010101: d_out = 0;
+            6'b010110: d_out = 0;
+            6'b010111: d_out = 0;
+            6'b011000: d_out = 0;
+            6'b011001: d_out = 0;
+            6'b011010: d_out = 0;
+            6'b011011: d_out = 0;
+            6'b011100: d_out = 0;
+            6'b011101: d_out = 0;
+            6'b011110: d_out = 0;
+            6'b011111: d_out = 0;
+            6'b100000: d_out = 1;
+            6'b100001: d_out = 0;
+            6'b100010: d_out = 0;
+            6'b100011: d_out = 0;
+            6'b100100: d_out = 0;
+            6'b100101: d_out = 0;
+            6'b100110: d_out = 0;
+            6'b100111: d_out = 0;
+            6'b101000: d_out = 0;
+            6'b101001: d_out = 0;
+            6'b101010: d_out = 0;
+            6'b101011: d_out = 0;
+            6'b101100: d_out = 0;
+            6'b101101: d_out = 0;
+            6'b101110: d_out = 0;
+            6'b101111: d_out = 0;
+            6'b110000: d_out = 0;
+            6'b110001: d_out = 0;
+            6'b110010: d_out = 0;
+            6'b110011: d_out = 0;
+            6'b110100: d_out = 0;
+            6'b110101: d_out = 0;
+            6'b110110: d_out = 0;
+            6'b110111: d_out = 0;
+            6'b111000: d_out = 0;
+            6'b111001: d_out = 0;
+            6'b111010: d_out = 0;
+            6'b111011: d_out = 0;
+            6'b111100: d_out = 0;
+            6'b111101: d_out = 0;
+            6'b111110: d_out = 0;
+            6'b111111: d_out = 0;
+            default:   d_out = 0;
+        endcase
+    end
+endmodule
+;
+
+
+module check_2 (
+    input logic [5:0] d_in,
+    output logic d_out
+);
+
+    always_comb begin
+        case (d_in)  // check sum = 2
+            6'b000000: d_out = 0;
+            6'b000001: d_out = 0;
+            6'b000010: d_out = 0;
+            6'b000011: d_out = 1;
+            6'b000100: d_out = 0;
+            6'b000101: d_out = 1;
+            6'b000110: d_out = 1;
+            6'b000111: d_out = 0;
+            6'b001000: d_out = 0;
+            6'b001001: d_out = 1;
+            6'b001010: d_out = 1;
+            6'b001011: d_out = 0;
+            6'b001100: d_out = 1;
+            6'b001101: d_out = 0;
+            6'b001110: d_out = 0;
+            6'b001111: d_out = 0;
+            6'b010000: d_out = 0;
+            6'b010001: d_out = 1;
+            6'b010010: d_out = 1;
+            6'b010011: d_out = 0;
+            6'b010100: d_out = 1;
+            6'b010101: d_out = 0;
+            6'b010110: d_out = 0;
+            6'b010111: d_out = 0;
+            6'b011000: d_out = 1;
+            6'b011001: d_out = 0;
+            6'b011010: d_out = 0;
+            6'b011011: d_out = 0;
+            6'b011100: d_out = 0;
+            6'b011101: d_out = 0;
+            6'b011110: d_out = 0;
+            6'b011111: d_out = 0;
+            6'b100000: d_out = 0;
+            6'b100001: d_out = 1;
+            6'b100010: d_out = 1;
+            6'b100011: d_out = 0;
+            6'b100100: d_out = 1;
+            6'b100101: d_out = 0;
+            6'b100110: d_out = 0;
+            6'b100111: d_out = 0;
+            6'b101000: d_out = 1;
+            6'b101001: d_out = 0;
+            6'b101010: d_out = 0;
+            6'b101011: d_out = 0;
+            6'b101100: d_out = 0;
+            6'b101101: d_out = 0;
+            6'b101110: d_out = 0;
+            6'b101111: d_out = 0;
+            6'b110000: d_out = 1;
+            6'b110001: d_out = 0;
+            6'b110010: d_out = 0;
+            6'b110011: d_out = 0;
+            6'b110100: d_out = 0;
+            6'b110101: d_out = 0;
+            6'b110110: d_out = 0;
+            6'b110111: d_out = 0;
+            6'b111000: d_out = 0;
+            6'b111001: d_out = 0;
+            6'b111010: d_out = 0;
+            6'b111011: d_out = 0;
+            6'b111100: d_out = 0;
+            6'b111101: d_out = 0;
+            6'b111110: d_out = 0;
+            6'b111111: d_out = 0;
+            default:   d_out = 0;
+        endcase
+    end
+endmodule
+;
+
+
+module check_3 (
+    input logic [5:0] d_in,
+    output logic d_out
+);
+
+    always_comb begin
+        case (d_in)  // check sum = 3
+            6'b000000: d_out = 0;
+            6'b000001: d_out = 0;
+            6'b000010: d_out = 0;
+            6'b000011: d_out = 0;
+            6'b000100: d_out = 0;
+            6'b000101: d_out = 0;
+            6'b000110: d_out = 0;
+            6'b000111: d_out = 1;
+            6'b001000: d_out = 0;
+            6'b001001: d_out = 0;
+            6'b001010: d_out = 0;
+            6'b001011: d_out = 1;
+            6'b001100: d_out = 0;
+            6'b001101: d_out = 1;
+            6'b001110: d_out = 1;
+            6'b001111: d_out = 0;
+            6'b010000: d_out = 0;
+            6'b010001: d_out = 0;
+            6'b010010: d_out = 0;
+            6'b010011: d_out = 1;
+            6'b010100: d_out = 0;
+            6'b010101: d_out = 1;
+            6'b010110: d_out = 1;
+            6'b010111: d_out = 0;
+            6'b011000: d_out = 0;
+            6'b011001: d_out = 1;
+            6'b011010: d_out = 1;
+            6'b011011: d_out = 0;
+            6'b011100: d_out = 1;
+            6'b011101: d_out = 0;
+            6'b011110: d_out = 0;
+            6'b011111: d_out = 0;
+            6'b100000: d_out = 0;
+            6'b100001: d_out = 0;
+            6'b100010: d_out = 0;
+            6'b100011: d_out = 1;
+            6'b100100: d_out = 0;
+            6'b100101: d_out = 1;
+            6'b100110: d_out = 1;
+            6'b100111: d_out = 0;
+            6'b101000: d_out = 0;
+            6'b101001: d_out = 1;
+            6'b101010: d_out = 1;
+            6'b101011: d_out = 0;
+            6'b101100: d_out = 1;
+            6'b101101: d_out = 0;
+            6'b101110: d_out = 0;
+            6'b101111: d_out = 0;
+            6'b110000: d_out = 0;
+            6'b110001: d_out = 1;
+            6'b110010: d_out = 1;
+            6'b110011: d_out = 0;
+            6'b110100: d_out = 1;
+            6'b110101: d_out = 0;
+            6'b110110: d_out = 0;
+            6'b110111: d_out = 0;
+            6'b111000: d_out = 1;
+            6'b111001: d_out = 0;
+            6'b111010: d_out = 0;
+            6'b111011: d_out = 0;
+            6'b111100: d_out = 0;
+            6'b111101: d_out = 0;
+            6'b111110: d_out = 0;
+            6'b111111: d_out = 0;
+            default:   d_out = 0;
+        endcase
+    end
+endmodule
+;
+
+
+module check_4 (
+    input logic [5:0] d_in,
+    output logic d_out
+);
+
+    always_comb begin
+        case (d_in)  // check sum = 4
+            6'b000000: d_out = 0;
+            6'b000001: d_out = 0;
+            6'b000010: d_out = 0;
+            6'b000011: d_out = 0;
+            6'b000100: d_out = 0;
+            6'b000101: d_out = 0;
+            6'b000110: d_out = 0;
+            6'b000111: d_out = 0;
+            6'b001000: d_out = 0;
+            6'b001001: d_out = 0;
+            6'b001010: d_out = 0;
+            6'b001011: d_out = 0;
+            6'b001100: d_out = 0;
+            6'b001101: d_out = 0;
+            6'b001110: d_out = 0;
+            6'b001111: d_out = 1;
+            6'b010000: d_out = 0;
+            6'b010001: d_out = 0;
+            6'b010010: d_out = 0;
+            6'b010011: d_out = 0;
+            6'b010100: d_out = 0;
+            6'b010101: d_out = 0;
+            6'b010110: d_out = 0;
+            6'b010111: d_out = 1;
+            6'b011000: d_out = 0;
+            6'b011001: d_out = 0;
+            6'b011010: d_out = 0;
+            6'b011011: d_out = 1;
+            6'b011100: d_out = 0;
+            6'b011101: d_out = 1;
+            6'b011110: d_out = 1;
+            6'b011111: d_out = 0;
+            6'b100000: d_out = 0;
+            6'b100001: d_out = 0;
+            6'b100010: d_out = 0;
+            6'b100011: d_out = 0;
+            6'b100100: d_out = 0;
+            6'b100101: d_out = 0;
+            6'b100110: d_out = 0;
+            6'b100111: d_out = 1;
+            6'b101000: d_out = 0;
+            6'b101001: d_out = 0;
+            6'b101010: d_out = 0;
+            6'b101011: d_out = 1;
+            6'b101100: d_out = 0;
+            6'b101101: d_out = 1;
+            6'b101110: d_out = 1;
+            6'b101111: d_out = 0;
+            6'b110000: d_out = 0;
+            6'b110001: d_out = 0;
+            6'b110010: d_out = 0;
+            6'b110011: d_out = 1;
+            6'b110100: d_out = 0;
+            6'b110101: d_out = 1;
+            6'b110110: d_out = 1;
+            6'b110111: d_out = 0;
+            6'b111000: d_out = 0;
+            6'b111001: d_out = 1;
+            6'b111010: d_out = 1;
+            6'b111011: d_out = 0;
+            6'b111100: d_out = 1;
+            6'b111101: d_out = 0;
+            6'b111110: d_out = 0;
+            6'b111111: d_out = 0;
+            default:   d_out = 0;
+        endcase
+    end
+endmodule
+;
+
+
+module check_5 (
+    input logic [5:0] d_in,
+    output logic d_out
+);
+
+    always_comb begin
+        case (d_in)  // check sum = 5
+            6'b000000: d_out = 0;
+            6'b000001: d_out = 0;
+            6'b000010: d_out = 0;
+            6'b000011: d_out = 0;
+            6'b000100: d_out = 0;
+            6'b000101: d_out = 0;
+            6'b000110: d_out = 0;
+            6'b000111: d_out = 0;
+            6'b001000: d_out = 0;
+            6'b001001: d_out = 0;
+            6'b001010: d_out = 0;
+            6'b001011: d_out = 0;
+            6'b001100: d_out = 0;
+            6'b001101: d_out = 0;
+            6'b001110: d_out = 0;
+            6'b001111: d_out = 0;
+            6'b010000: d_out = 0;
+            6'b010001: d_out = 0;
+            6'b010010: d_out = 0;
+            6'b010011: d_out = 0;
+            6'b010100: d_out = 0;
+            6'b010101: d_out = 0;
+            6'b010110: d_out = 0;
+            6'b010111: d_out = 0;
+            6'b011000: d_out = 0;
+            6'b011001: d_out = 0;
+            6'b011010: d_out = 0;
+            6'b011011: d_out = 0;
+            6'b011100: d_out = 0;
+            6'b011101: d_out = 0;
+            6'b011110: d_out = 0;
+            6'b011111: d_out = 1;
+            6'b100000: d_out = 0;
+            6'b100001: d_out = 0;
+            6'b100010: d_out = 0;
+            6'b100011: d_out = 0;
+            6'b100100: d_out = 0;
+            6'b100101: d_out = 0;
+            6'b100110: d_out = 0;
+            6'b100111: d_out = 0;
+            6'b101000: d_out = 0;
+            6'b101001: d_out = 0;
+            6'b101010: d_out = 0;
+            6'b101011: d_out = 0;
+            6'b101100: d_out = 0;
+            6'b101101: d_out = 0;
+            6'b101110: d_out = 0;
+            6'b101111: d_out = 1;
+            6'b110000: d_out = 0;
+            6'b110001: d_out = 0;
+            6'b110010: d_out = 0;
+            6'b110011: d_out = 0;
+            6'b110100: d_out = 0;
+            6'b110101: d_out = 0;
+            6'b110110: d_out = 0;
+            6'b110111: d_out = 1;
+            6'b111000: d_out = 0;
+            6'b111001: d_out = 0;
+            6'b111010: d_out = 0;
+            6'b111011: d_out = 1;
+            6'b111100: d_out = 0;
+            6'b111101: d_out = 1;
+            6'b111110: d_out = 1;
+            6'b111111: d_out = 0;
+            default:   d_out = 0;
+        endcase
+    end
+endmodule
+;
+
+
+module check_6 (
+    input logic [5:0] d_in,
+    output logic d_out
+);
+
+    always_comb begin
+        case (d_in)  // check sum = 6
+            6'b000000: d_out = 0;
+            6'b000001: d_out = 0;
+            6'b000010: d_out = 0;
+            6'b000011: d_out = 0;
+            6'b000100: d_out = 0;
+            6'b000101: d_out = 0;
+            6'b000110: d_out = 0;
+            6'b000111: d_out = 0;
+            6'b001000: d_out = 0;
+            6'b001001: d_out = 0;
+            6'b001010: d_out = 0;
+            6'b001011: d_out = 0;
+            6'b001100: d_out = 0;
+            6'b001101: d_out = 0;
+            6'b001110: d_out = 0;
+            6'b001111: d_out = 0;
+            6'b010000: d_out = 0;
+            6'b010001: d_out = 0;
+            6'b010010: d_out = 0;
+            6'b010011: d_out = 0;
+            6'b010100: d_out = 0;
+            6'b010101: d_out = 0;
+            6'b010110: d_out = 0;
+            6'b010111: d_out = 0;
+            6'b011000: d_out = 0;
+            6'b011001: d_out = 0;
+            6'b011010: d_out = 0;
+            6'b011011: d_out = 0;
+            6'b011100: d_out = 0;
+            6'b011101: d_out = 0;
+            6'b011110: d_out = 0;
+            6'b011111: d_out = 0;
+            6'b100000: d_out = 0;
+            6'b100001: d_out = 0;
+            6'b100010: d_out = 0;
+            6'b100011: d_out = 0;
+            6'b100100: d_out = 0;
+            6'b100101: d_out = 0;
+            6'b100110: d_out = 0;
+            6'b100111: d_out = 0;
+            6'b101000: d_out = 0;
+            6'b101001: d_out = 0;
+            6'b101010: d_out = 0;
+            6'b101011: d_out = 0;
+            6'b101100: d_out = 0;
+            6'b101101: d_out = 0;
+            6'b101110: d_out = 0;
+            6'b101111: d_out = 0;
+            6'b110000: d_out = 0;
+            6'b110001: d_out = 0;
+            6'b110010: d_out = 0;
+            6'b110011: d_out = 0;
+            6'b110100: d_out = 0;
+            6'b110101: d_out = 0;
+            6'b110110: d_out = 0;
+            6'b110111: d_out = 0;
+            6'b111000: d_out = 0;
+            6'b111001: d_out = 0;
+            6'b111010: d_out = 0;
+            6'b111011: d_out = 0;
+            6'b111100: d_out = 0;
+            6'b111101: d_out = 0;
+            6'b111110: d_out = 0;
+            6'b111111: d_out = 1;
+            default:   d_out = 0;
+        endcase
+    end
+endmodule
+;

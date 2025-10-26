@@ -1,1 +1,3 @@
-# four_input_adder
+# Four Input Full Adder
+
+A four input adder implementation.
