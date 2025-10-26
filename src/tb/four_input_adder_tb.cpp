@@ -51,7 +51,6 @@ struct scoreboard {
         llong b = tx_out->b;
         llong O_F = tx_out->O_F;
         
-        cout << su << " x\n";
         chk(su & UINT32_MAX, b);
         std::string c = std::bitset<34>(su).to_string();
         chk(c[0] == '1' || c[1] == '1', O_F);
@@ -159,7 +158,7 @@ transactional_item_in * transactional_input_in_random() {
     ++cnt;
     if (cnt & 1) { // drive an input every other time the transactional
         transactional_item_in * tx = new transactional_item_in{
-            dist(gen),
+            dist(gen), // set all inputs to random
             dist(gen),
             dist(gen),
             dist(gen)
