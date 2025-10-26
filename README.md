@@ -4,7 +4,7 @@ A four-input adder implementation in SystemVerilog.
 
 ## Block Diagram
 
-![](docs/img/full_adder_bd.png "Full Adder")
+![](docs/img/full_adder.png "Full Adder")
 
 The full adder accepts four data inputs and two carry inputs, producing one data output and two carry outputs. This design accommodates sums ranging from 0 to 4, requiring both carry outputs to prevent overflow in multi-bit configurations, as opposed to a traditional 2-input full adder which has a maximum sum of 3 (requiring only one output and one carry to store).
 
