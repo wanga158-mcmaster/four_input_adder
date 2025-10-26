@@ -41,4 +41,5 @@ A UVM-style testbench was implemented in C++ using the Verilator:
 - Single driver/dual monitor architecture  
 - Scoreboard with assertion-based verification
 - Comprehensive test case coverage
+
 Assertions were used to check all tests pass/fail status.
