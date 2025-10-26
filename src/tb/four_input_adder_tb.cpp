@@ -204,7 +204,6 @@ int main()
                 } else {
                     tx = transactional_input_in_random();
                 }
-
                 drv->drive(tx);
                 mn_in->monitor();
                 mn_out->monitor();
