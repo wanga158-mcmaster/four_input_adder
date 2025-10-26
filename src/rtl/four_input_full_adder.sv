@@ -29,10 +29,8 @@ module four_input_full_adder (
         .d_in (p_in),
         .d_out(set_3)
     );
-    check_6 chk_6 (
-        .d_in (p_in),
-        .d_out(set_6)
-    );
+
+    assign set_6 = &p_in;
 
     assign c0_out = (set_2 | set_3 | set_6); // second bit is set if sum is 2, 3, or 6
 
