@@ -36,7 +36,7 @@ Kogge-Stone architecture could reduce gate delay at the cost of increased resour
 ## Testing
 ![](docs/img/tests.png "Sample Testing")
 
-A UVM-style testbench was implemented in C++ using the Verilator:
+A UVM-style testbench was implemented in C++ using the Verilator library:
 - Randomized transaction generation
 - Single driver/dual monitor architecture  
 - Scoreboard with assertion-based verification
